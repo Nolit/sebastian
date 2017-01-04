@@ -8,7 +8,7 @@ import javax.imageio.ImageIO
 object TaskTray {
   private val iconPath = "src/main/resources/img/icon.png"
   
-  def show: Unit ={
+  def putOn: Unit ={
     println("put on task tray...")
 
     val icon: TrayIcon = new TrayIcon(ImageIO.read(new File(iconPath)))
@@ -16,6 +16,6 @@ object TaskTray {
   }
 
   def main(args: Array[String]): Unit = {
-    show
+    putOn
   }
 }
